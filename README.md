@@ -2,6 +2,16 @@
 
 Little fun game for MacOS.
 
+## Installation
+```shell
+git clone 
+```
+
+## Usage
+```shell
+$ cd 
+```
+
 ## Project Structure
 ```
 PROJECT_ROOT
