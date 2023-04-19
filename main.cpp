@@ -13,14 +13,9 @@
 
 #include <cstdlib>
 #include <iostream>
-#include <istream>
-#include <sstream>
 #include <ncurses.h>
 #include <unistd.h>
-#include <vector>
-#include <map>
-#include <string>
-#include <stack>
+#include "role.h"
 
 typedef enum DIRECTION {
   STOP = 0, 
@@ -30,8 +25,27 @@ typedef enum DIRECTION {
   DOWN
 } DIRECTION;
 
-int main(void) {
 
-  printf("%s\n", "test");
-  return 0;
+int main(void) {
+    initscr();
+    box(stdscr, '*', '*');
+
+    // 取得螢幕的行數和列數
+    int maxY, maxX;
+    getmaxyx(stdscr, maxY, maxX);
+
+    // 計算正中央的座標
+    int y = (maxY - 7) / 2;  // 7 是 *tank 的行數
+    int x = (maxX - 23) / 2; // 23 是 *tank 中最長的一行的長度
+
+    // 在正中央印出 *tank
+    Role tank(tankBody, 7, 23);
+    tank.draw(y, x);
+
+    // 刷新螢幕以顯示訊息
+    refresh();
+    while (getch() != 'q');
+
+    endwin();
+    return 0;
 }
