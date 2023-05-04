@@ -39,6 +39,7 @@ void drawWelcomeScene() {
       break;
     else if (ch == 'n') 
       drawRuleScene();
+      break;
   }
 
   endwin();
