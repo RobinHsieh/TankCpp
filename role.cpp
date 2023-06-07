@@ -21,6 +21,9 @@ void Role::draw(int y, int x) const {
     }
 }
 
+int MAX_X = 127;
+int MAX_Y = 39;
+
 const char *tankBody[7] = {
   "       \\                ",
   "       _\\______         ",
@@ -29,4 +32,65 @@ const char *tankBody[7] = {
   "/ ___WHERE_ARE_YOU?__ \\ ",
   "\\/ _===============_ \\/ ",
   "  \\-===============-/   ",
+};
+
+const char *gameBogy[3] = {
+  "(\\_/)",
+  "|O\vO|",
+  "|_|_|",
+};
+
+const char *bogyBody[5] = {
+  " (\\_/) ",
+  " |O\vO| ",
+  "/ === \\", 
+  "\\| X |/", 
+  " |_|_| ",
+};
+
+const char *firstAnimationBogy[5] = {
+  " \' (\\_/) ",
+  "' /X_X/  ",
+  "/ === \\  ",
+  "\\| X |/  ",
+  " |_|_|   ",
+};
+
+const char *secondAnimationBogy[5] = {
+  " \'    (\\_/) ",
+  "\' \\|'/X_X/  ",
+  "/ === \\     ",
+  "\\| X |/     ",
+  " |_|_|      ",
+};
+
+const char *thirdAnimationBogy[5] = {
+  " \\ | / (\\_/) ",
+  "\' \\|/ '/X_X/ ",
+  "/ === \\      ",
+  "\\| X |/      ",
+  " |_|_|       ",
+};
+
+const char *forthAnimationBogy[5] = {
+  " \' | \'  \'        ",
+  "\' \\|/ \'  \'\\X_X\\  ",
+  "/ === \\    (/ \\) ",
+  "\\| X |/          ",
+  " |_|_|           ",
+};
+
+const char *fifthAnimationBogy[5] = {
+  " \' \' \'           ",
+  "  \\|/            ",
+  "/ === \\    \\X_X\\ ",
+  "\\| X |/    (/ \\) ",
+  " |_|_|           ",
+};
+const char *sixthAniamtionBogy[6] = {
+  "                   ",
+  "  \'|\'              ",
+  "/ === \\            ",
+  "\\| X |/      \\X_X\\ ",
+  " |_|_|       (/ \\) ",
 };

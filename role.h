@@ -12,7 +12,11 @@
 #ifndef ROLE_H
 #define ROLE_H
 
-#include <string>
+extern const char *tankBody[7];
+extern const char *bogyBody[5];
+
+extern int MAX_X;
+extern int MAX_Y;
 
 class Role {
 public:
@@ -23,8 +27,5 @@ private:
     int myHeight;
     int myWidth;
 };
-
-extern const char *tankBody[7];
-
 
 #endif // ROLE_H
